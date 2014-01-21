@@ -5,6 +5,7 @@
 register_asset "javascripts/correct_post.js"
 register_asset "javascripts/topic_cont.js"
 register_asset "javascripts/topic_controller_cont2.js"
+register_asset "javascripts/post_view_cont.js"
 register_asset "stylesheets/correct_post.css.scss"
 
 after_initialize do
