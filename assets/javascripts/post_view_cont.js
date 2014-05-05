@@ -1,8 +1,9 @@
 Discourse.PostView.reopen({
   classNameBindings: ['postTypeClass',
                       'selected',
-                      'post.hidden:deleted',
+                      'post.hidden:post-hidden',
                       'post.deleted',
+                      'groupNameClass',
                       'correctClass'],
 
   correctClass: function() {
