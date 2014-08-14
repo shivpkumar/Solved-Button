@@ -18,3 +18,4 @@
 en:
   js:
     correct_post: "mark this post as solving your initial question"
+    incorrect_post: "unmark this post as solving your initial question"

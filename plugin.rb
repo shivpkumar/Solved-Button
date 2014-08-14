@@ -13,6 +13,6 @@ after_initialize do
   load File.expand_path("../serializers/topic_view_serializer.rb", __FILE__)
 
   Discourse::Application.routes.prepend do
-    put "t/:slug/:topic_id/mark_solved" => "topics#mark_solved", constraints: {topic_id: /\d+/}
+    put "t/:slug/:topic_id/toggle_solved" => "topics#toggle_solved", constraints: {topic_id: /\d+/}
   end
 end

@@ -12,14 +12,15 @@ export default {
       buttonForCorrect: function(post) {
         var correctPostId = post.get("topic.correct_post_id");
 
-        if (post.get("topic.details.can_edit") && post.get("id") !== parseInt(correctPostId, 10)) {
+        if (post.get("topic.details.can_edit") && post.get("id") === parseInt(correctPostId, 10)) {
+          return new Button("correct", "incorrect_post", "check-square", { className: 'mark-incorrect' });
+        } else {
           return new Button("correct", "correct_post", "check-square");
         }
       },
 
       clickCorrect: function() {
-        this.get('controller').markSolved(this.get("post"));
-        this.set("post.topic.correct_post_id", this.get("post.id"));
+        this.get('controller').toggleSolved(this.get("post"));
       }
     });
   }
