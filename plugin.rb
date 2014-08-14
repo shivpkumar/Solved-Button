@@ -2,7 +2,6 @@
 # about: add a button at the end of every post allowing users to mark a post as being correct
 # author: shiv kumar
 
-register_asset "javascripts/correct_post.js"
 register_asset "javascripts/topic_cont.js"
 register_asset "javascripts/topic_controller_cont2.js"
 register_asset "javascripts/post_view_cont.js"
